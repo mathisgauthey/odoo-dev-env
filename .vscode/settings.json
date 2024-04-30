@@ -7,5 +7,6 @@
     "python.analysis.extraPaths": [
         "src/odoo",
         "src/odoo_enterprise"
-    ]
+    ],
+    "search.useIgnoreFiles": false
 }
