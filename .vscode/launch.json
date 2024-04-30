@@ -1,0 +1,53 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Odoo WSL",
+            "type": "debugpy",
+            "request": "launch",
+            "python": "${workspaceRoot}/venv/bin/python3",
+            "program": "${workspaceRoot}/odoo/odoo-bin",
+            "args": [
+                "--dev",
+                "all",
+                "-d",
+                "odoo-db",
+                "-r",
+                "odoo",
+                "-w",
+                "odoo",
+                "--limit-time-real",
+                "999999999",
+                "--addons-path",
+                "${workspaceRoot}/src/odoo/addons,${workspaceRoot}/src/odoo/odoo/addons,${workspaceRoot}/src/odoo_enterprise",
+                "-i",
+                "YOUR_ADDONS",
+                "-u",
+                "YOUR_ADDONS"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Odoo Attach Docker",
+            "type": "python",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 8888
+            },
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}/addons",
+                    "remoteRoot": "/mnt/extra-addons",
+                }
+            ],
+            "logToFile": true,
+            "justMyCode": false,
+            // "preLaunchTask": "Odoo: Start",
+            // "postDebugTask": "Odoo: Stop"
+        }
+    ]
+}

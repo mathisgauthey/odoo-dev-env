@@ -1,0 +1,11 @@
+{
+    "python.defaultInterpreterPath": "venv/bin/python3",
+    "autopep8.args": [
+        "--ignore=E501,E301,E302"
+    ],
+    "python.languageServer": "None",
+    "python.analysis.extraPaths": [
+        "src/odoo",
+        "src/odoo_enterprise"
+    ]
+}
