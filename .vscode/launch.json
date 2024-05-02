@@ -13,6 +13,8 @@
             "args": [
                 "--dev",
                 "all",
+                // "--log-handler",
+                // ":DEBUG",
                 "-d",
                 "odoo-db",
                 "-r",
@@ -22,13 +24,14 @@
                 "--limit-time-real",
                 "999999999",
                 // "--addons-path",
-                // "COMMA_SEPARATED_ADDONS_MODULES_RELATIVE_PATH",
+                // "COMMA_SEPARATED_ADDONS_MODULES_RELATIVE_PATH", // "${workspaceFolder}/src/odoo/odoo/addons,${workspaceFolder}/src/odoo/addons,${workspaceFolder}/src/odoo_enterprise" is for Odoo pre-bundled addons
                 // "-i",
                 // "COMMA_SEPARATED_MODULES_NAME_LIST",
                 // "-u",
                 // "COMMA_SEPARATED_MODULES_NAME_LIST",
             ],
-            "console": "integratedTerminal"
+            "console": "integratedTerminal",
+            "justMyCode": false,
         },
         {
             "name": "Odoo Attach Docker",
