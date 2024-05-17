@@ -8,7 +8,12 @@
         "src/odoo",
         "src/odoo_enterprise"
     ],
+    "search.useIgnoreFiles": false,
     "python.testing.pytestArgs": [
+        "-v",
+        "--cov=addons",
+        "--cov-report=xml",
+        "--html=coverage/report.html",
         "addons/",
         "--odoo-database=odoo-db",
         "--odoo-config=config/odoo.conf"

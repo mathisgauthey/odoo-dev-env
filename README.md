@@ -22,6 +22,9 @@ Then, from your virtual env (remember to use `source venv/bin/activate` to get i
 ```bash
 pip install pytest==7.4.3
 pip install pytest-odoo
+pip install coverage
+pip install pytest-cov
+pip install pytest-html
 ```
 
 Then, install Odoo as a pip package :
