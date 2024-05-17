@@ -8,5 +8,21 @@
         "src/odoo",
         "src/odoo_enterprise"
     ],
-    "search.useIgnoreFiles": false
+    "python.testing.pytestArgs": [
+        "addons/",
+        "--odoo-database=odoo-db",
+        "--odoo-config=config/odoo.conf"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "${workspaceFolder}/src/odoo",
+        "ODOO_RC": "${workspaceFolder}/config/odoo.conf",
+        "OPENERP_SERVER": "${workspaceFolder}/config/odoo.conf"
+    },
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "${workspaceFolder}/src/odoo",
+        "ODOO_RC": "${workspaceFolder}/config/odoo.conf",
+        "OPENERP_SERVER": "${workspaceFolder}/config/odoo.conf"
+    }
 }
