@@ -13,6 +13,28 @@ The project is a combination of
 <!--                                WSL Setup                                -->
 <!-- ----------------------------------------------------------------------- -->
 
+## VS Code Odoo Pytest setup
+
+Follow the WSL setup instructions to get a working Odoo dev environment first.
+
+Then, from your virtual env (remember to use `source venv/bin/activate` to get into your venv), install [pytest 7.4.3](https://pypi.org/project/pytest/7.4.3/) and [pytest-odoo](https://github.com/camptocamp/pytest-odoo) :
+
+```bash
+pip install pytest==7.4.3
+pip install pytest-odoo
+```
+
+Then, install Odoo as a pip package :
+
+```bash
+cd ./src/odoo
+pip install -e .
+```
+
+You should now see odoo when doing a `pip list`.
+
+You can now configure PyTest on VS Code, but it should work just fine using the `settings.json` and `config/odoo.conf` files provided in this repository.
+
 ## WSL Setup
 
 File structure :
