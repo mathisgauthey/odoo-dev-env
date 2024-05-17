@@ -10,10 +10,8 @@
     ],
     "python.testing.pytestArgs": [
         "addons/",
-        "--odoo-database",
-        "odoo-db",
-        "--odoo-config",
-        "config/odoo.conf"
+        "--odoo-database=odoo-db",
+        "--odoo-config=config/odoo.conf"
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
