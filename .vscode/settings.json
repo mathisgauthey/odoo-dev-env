@@ -9,7 +9,7 @@
         "src/odoo_enterprise"
     ],
     "python.testing.pytestArgs": [
-        "PATH_TO_TESTS",
+        "addons/",
         "--odoo-database",
         "odoo-db",
         "--odoo-config",
