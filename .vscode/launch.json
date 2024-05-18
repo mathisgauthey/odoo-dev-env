@@ -32,11 +32,6 @@
             ],
             "console": "integratedTerminal",
             "justMyCode": false,
-            "env": {
-                "PYTHONPATH": "${workspaceFolder}/src/odoo",
-                "ODOO_RC": "${workspaceFolder}/config/odoo.conf",
-                "OPENERP_SERVER": "${workspaceFolder}/config/odoo.conf"
-            }
         },
         {
             "name": "Odoo Testing WSL",
@@ -68,11 +63,6 @@
             ],
             "console": "integratedTerminal",
             "justMyCode": false,
-            "env": {
-                "PYTHONPATH": "${workspaceFolder}/src/odoo",
-                "ODOO_RC": "${workspaceFolder}/config/odoo.conf",
-                "OPENERP_SERVER": "${workspaceFolder}/config/odoo.conf"
-            }
         },
         // {
         //     "name": "Odoo Attach Docker",

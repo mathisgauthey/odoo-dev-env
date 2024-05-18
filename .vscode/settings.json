@@ -20,14 +20,4 @@
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
-    "terminal.integrated.env.windows": {
-        "PYTHONPATH": "${workspaceFolder}/src/odoo",
-        "ODOO_RC": "${workspaceFolder}/config/odoo.conf",
-        "OPENERP_SERVER": "${workspaceFolder}/config/odoo.conf"
-    },
-    "terminal.integrated.env.linux": {
-        "PYTHONPATH": "${workspaceFolder}/src/odoo",
-        "ODOO_RC": "${workspaceFolder}/config/odoo.conf",
-        "OPENERP_SERVER": "${workspaceFolder}/config/odoo.conf"
-    }
 }

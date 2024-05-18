@@ -38,6 +38,14 @@ You should now see odoo when doing a `pip list`.
 
 You can now configure PyTest on VS Code, but it should work just fine using the `settings.json` and `config/odoo.conf` files provided in this repository.
 
+Don't forget to create a `.env` file like that :
+
+```env
+ODOO_RC=config/odoo.conf
+ADDONS_PATH=src/odoo/odoo/addons,src/odoo/addons,COMMA_SEPARATED_ADDONS_PATHS
+ADDONS_LIST=COMMA_SEPARATED_ADDONS_NAMES
+```
+
 ## WSL Setup
 
 File structure :
