@@ -4,6 +4,26 @@
 //     "version": "2.0.0",
 //     "tasks": [
 //         {
+//             "label": "Set Environment Variables",
+//             "type": "shell",
+//             "command": "echo",
+//             "args": [
+//                 "export ADDONS_PATH=${ADDONS_PATH}",
+//                 "export ADDONS_LIST=${ADDONS_LIST}"
+//             ],
+//             "options": {
+//                 "env": {
+//                     "ADDONS_PATH": "your_addons_path",
+//                     "ADDONS_LIST": "your_addons_list"
+//                 }
+//             }
+//         },
+//         {
+//             "label": "Echo Environment Variable",
+//             "type": "shell",
+//             "command": "echo ${env:ADDONS_PATH}"
+//         },
+//         {
 //             "label": "Odoo: Start",
 //             "type": "shell",
 //             "command": "docker compose up"

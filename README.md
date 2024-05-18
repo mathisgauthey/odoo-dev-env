@@ -171,7 +171,7 @@ Press `F5` to start the server and `F5` to start it in debug mode. You can then 
 <!--                              Docker Setup                               -->
 <!-- ----------------------------------------------------------------------- -->
 
-## Docker Setup
+<!-- ## Docker Setup
 
 This repo is meant to **simplify the dev environment for odoo development**.
 
@@ -342,4 +342,4 @@ The following picture comes from their writtings :
 
 There is no current way to debug the Odoo source code.
 
-You can probably find a similar setup on Jetbrains IDEs.
+You can probably find a similar setup on Jetbrains IDEs. -->
