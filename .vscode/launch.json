@@ -64,6 +64,20 @@
             "console": "integratedTerminal",
             "justMyCode": false,
         },
+        {
+            "name": "Odoo Debug Tests WSL",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "purpose": [
+                "debug-test"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYTEST_ADDOPTS": "--no-cov"
+            }
+        }
         // {
         //     "name": "Odoo Attach Docker",
         //     "type": "python",
