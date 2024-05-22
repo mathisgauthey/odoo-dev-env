@@ -13,7 +13,8 @@
         "-v",
         "--cov=addons",
         "--cov-report=xml",
-        "--html=coverage/report.html",
+        "--cov-report=html:coverage/report/index.html",
+        "--html=coverage/results/index.html",
         "addons/",
         "--odoo-database=odoo-db",
         "--odoo-config=config/odoo.conf"
